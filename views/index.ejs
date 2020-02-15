@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cloak</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+      	<h1 style="text-align: center">Load File</h1>
+		<script>
+		  function getHREF(ref) {
+        if (ref == 'set_input_file') {
+          window.location.href = "/cmd/post?command=set_input_file";
+        }
+		  }
+		</script>
+      <div class="centred-outer">
+        <div class="centred-inner">
+          <table style="width: 100%; margin-left: auto; margin-right: auto">
+            <tr>
+              <td>
+                <input type="text" id="inputFile">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h1> Browse </h1>
+                <button class="fancy-button" onclick="getHREF('set_input_file')">
+              </td>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
